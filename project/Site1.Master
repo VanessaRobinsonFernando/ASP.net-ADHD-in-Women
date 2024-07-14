@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="project.Site1" %>
+
+<!DOCTYPE html>
+  <style>
+        body{
+            background-color: #ffefde
+        }
+      .auto-style1 {
+          width: 100%;
+          margin-right: 110px;
+          height: 325px;
+      }
+      .auto-style5 {
+          height: 43px;
+      }
+      .auto-style6 {
+          text-align: center;
+          width: 73px;
+      }
+      .auto-style8 {
+          text-align: center;
+      }
+      .auto-style10 {
+          width: 65px;
+          height: 56px;
+      }
+      .auto-style11 {
+          width: 60px;
+          height: 91px;
+      }
+      .auto-style13 {
+          width: 369px;
+          text-align: center;
+      }
+      .auto-style14 {
+          width: 370px;
+          text-align: center;
+      }
+      .auto-style16 {
+          width: 20px;
+          height: 24px;
+      }
+      .auto-style17 {
+          width: 19px;
+          height: 22px;
+      }
+      .auto-style20 {
+          width: 333px;
+          height: 141px;
+      }
+          
+      .auto-style22 {
+          text-decoration: none;
+      }
+    
+      .auto-style25 {
+          border: thin groove #393839;
+          width: 369px;
+          text-align: center;
+          font-weight: bold;
+          background-color: #FFE1AE;
+      }
+    
+      .auto-style26 {
+          background-color: #FFE1AE;
+      }
+    
+      .auto-style27 {
+          height: 29px;
+          text-align: center;
+      }
+    
+    </style>
+<html>
+<head runat="server">
+    <title>ADHD Diagnosis Tool</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <p class="auto-style8"> 
+        <img alt="" class="auto-style20" src="Images/logo2.png" /></p>
+    <table class="auto-style1">
+        <tr>
+            <td colspan="4" class="auto-style8" style="border: thin groove #000000; font-family: 'Vladimir Script'; font-size: 300%; font-weight: bolder; background-color: #fffdee; color: #393839;">
+                <img alt="" class="auto-style11" src="Images/sparkle4.png" />ADHD Diagnosis Assistant
+                <img alt="" class="auto-style10" src="Images/sparkle3.png" /></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="auto-style8" style="background-color: #FFF7EE; font-family: Gabriola; font-size: medium; color: #393839; font-style: italic; border: thin groove #393839">DISCLAMER: This is a form only, not advice or diagnosis from a medical professional. For a proper diagnosis, please contact your psychiatrist </td>
+        </tr>
+        <tr>
+            <td class="auto-style6" style="border: thin groove #393839; background-color: #FFE1AE;">&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="38px" ImageUrl="~/Images/home.png" OnClick="ImageButton1_Click" Width="39px" />
+                &nbsp; </td>
+            <td class="auto-style13" style="border: thin groove #393839; background-color: #FFE1AE;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                </strong>
+                <a href="homepage.aspx" class="auto-style22" style="color: #000000"><strong>Homepage</strong></a></td>
+            <td class="auto-style25">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Quiz.aspx" class="auto-style22" style="color: #000000">Take the Quiz</a></td>
+            <td class="auto-style14" style="border: thin groove #393839; background-color: #FFE1AE;">
+                <a class="auto-style22" href="reference.aspx" style="color: #000000"><span class="auto-style26"><strong>References</strong></span></a></td>
+        </tr>
+        <tr>
+            <td class="auto-style5" colspan="4">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>
+                        Default page (master one prolly)</p>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style27" colspan="4" style="border: thin groove #000000; font-family: 'Century Gothic'; font-size: small; font-weight: bolder; background-color: #fffdee; color: #808080;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+                <asp:Label ID="Label1" runat="server" ForeColor="Gray" Text="Copyright © 2022 ADHD Diagnosis Assistant. All rights reserved."></asp:Label>
+                <br />
+                <img alt="" class="auto-style16" src="Images/loco.png" />&nbsp; The British University in Dubai <br />
+                <img alt="" class="auto-style17" src="Images/phone.png" />&nbsp;&nbsp; +971 2134568&nbsp;&nbsp;&nbsp; 
+                <br />
+            </td>
+        </tr>
+    </table>
+
+    </form>
+
+    </body>
+</html>
